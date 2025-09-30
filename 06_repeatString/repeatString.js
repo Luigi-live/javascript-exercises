@@ -1,7 +1,10 @@
 const repeatString = function(repeatedString, num) {
     let word = "";
-    for(let i = 0; i < num; i++) {
-        word = word + repeatedString;
+    if(num < 0){
+        return 'ERROR'
+    }
+    for(let i = 0; i < num; i ++){
+        word += repeatedString;
     }
     return word;
 };
